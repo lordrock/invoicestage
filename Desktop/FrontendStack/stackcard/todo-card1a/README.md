@@ -1,4 +1,19 @@
 This version upgrades the static Todo Card into a more interactive and stateful component using vanilla HTML, CSS, and JavaScript.
+## Live Demo
+
+hngfrontstage1.vercel.app
+
+## GitHub Repository
+
+https://github.com/lordrock/hngstackfrontend1
+
+## Git Main Roots
+
+https://github.com/lordrock/hngstackfrontend1/Desktop/FrontendStack/stackcard/todo-card1a
+
+## Github Repository for both Task
+
+https://github.com/lordrock/hngstackfrontend1/commits/main/
 
 ### New additions in Stage 1A
 
