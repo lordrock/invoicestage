@@ -9,11 +9,11 @@ https://github.com/lordrock/hngstackfrontend1
 
 ## Git Main Roots
 
-https://github.com/lordrock/hngstackfrontend1/Desktop/FrontendStack/stackcard/todo-card1a
+https://github.com/lordrock/hngstackfrontend1/tree/main/Desktop/FrontendStack/stackcard/todo-card1a
 
 ## Github Repository for both Task
 
-https://github.com/lordrock/hngstackfrontend1/commits/main/
+https://github.com/lordrock/hngstackfrontend1b/tree/main/Desktop/FrontendStack/stackcard
 
 ### New additions in Stage 1A
 
