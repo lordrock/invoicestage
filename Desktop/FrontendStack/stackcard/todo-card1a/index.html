@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Todo Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <article class="todo-card" data-testid="test-todo-card">
+        <div class="todo-card__priority-bar" data-testid="test-todo-priority-indicator"></div>
+
+        <div class="todo-card__view" id="todoView">
+          <div class="todo-card__top">
+            <div class="todo-card__content">
+              <div class="todo-card__badges">
+                <span class="priority-badge" data-testid="test-todo-priority"></span>
+                <span class="status-badge" data-testid="test-todo-status"></span>
+                <span class="overdue-badge hidden" data-testid="test-todo-overdue-indicator">Overdue</span>
+              </div>
+
+              <h2 class="todo-card__title" data-testid="test-todo-title"></h2>
+
+              <div
+                class="todo-card__collapsible"
+                data-testid="test-todo-collapsible-section"
+              >
+                <p class="todo-card__description" data-testid="test-todo-description"></p>
+              </div>
+
+              <button
+                type="button"
+                class="expand-toggle hidden"
+                data-testid="test-todo-expand-toggle"
+                aria-expanded="false"
+              >
+                Show More
+              </button>
+            </div>
+
+            <div class="todo-card__checkbox-area">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  data-testid="test-todo-complete-toggle"
+                  aria-label="Mark task as complete"
+                />
+                <span>Complete</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="todo-card__meta">
+            <div class="meta-block">
+              <p class="meta-label">Due Date</p>
+              <time class="meta-value" data-testid="test-todo-due-date"></time>
+            </div>
+
+            <div class="meta-block">
+              <p class="meta-label">Time Remaining</p>
+              <time class="meta-value" data-testid="test-todo-time-remaining"></time>
+            </div>
+
+            <div class="meta-block">
+              <p class="meta-label">Status Control</p>
+              <select data-testid="test-todo-status-control" class="status-control">
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Done">Done</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="todo-card__tags-section">
+            <p class="meta-label">Categories</p>
+            <ul class="todo-card__tags" role="list" data-testid="test-todo-tags"></ul>
+          </div>
+
+          <div class="todo-card__actions">
+            <button type="button" class="edit-button" data-testid="test-todo-edit-button">
+              Edit
+            </button>
+            <button type="button" class="delete-button" data-testid="test-todo-delete-button">
+              Delete
+            </button>
+          </div>
+        </div>
+
+        <form class="todo-card__edit hidden" id="todoEditForm" data-testid="test-todo-edit-form">
+          <div class="form-group">
+            <label for="editTitle">Title</label>
+            <input id="editTitle" type="text" data-testid="test-todo-edit-title-input" />
+          </div>
+
+          <div class="form-group">
+            <label for="editDescription">Description</label>
+            <textarea
+              id="editDescription"
+              rows="5"
+              data-testid="test-todo-edit-description-input"
+            ></textarea>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="editPriority">Priority</label>
+              <select id="editPriority" data-testid="test-todo-edit-priority-select">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="editDueDate">Due Date</label>
+              <input
+                id="editDueDate"
+                type="datetime-local"
+                data-testid="test-todo-edit-due-date-input"
+              />
+            </div>
+          </div>
+
+          <div class="todo-card__actions">
+            <button type="submit" class="save-button" data-testid="test-todo-save-button">
+              Save
+            </button>
+            <button type="button" class="cancel-button" data-testid="test-todo-cancel-button">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
