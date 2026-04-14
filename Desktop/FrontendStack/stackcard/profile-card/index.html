@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <article class="profile-card" data-testid="test-profile-card">
+        <figure class="profile-card__media">
+          <img
+            src="./image/ximage.jpg"
+            alt="Portrait of Oyewumi Isaac"
+            class="profile-card__avatar"
+            data-testid="test-user-avatar"
+          />
+          <figcaption class="visually-hidden">Profile photo of Oyewumi Isaac</figcaption>
+        </figure>
+
+        <div class="profile-card__content">
+          <header class="profile-card__header">
+            <h1 class="profile-card__name" data-testid="test-user-name">
+              Oyewumi Isaac
+            </h1>
+
+            <p class="profile-card__bio" data-testid="test-user-bio">
+              I am a frontend developer and designer based in Nigeria, passionate
+              about building clean, accessible, and responsive digital experiences.
+              I enjoy creating modern interfaces that combine usability, branding,
+              and strong visual presentation.
+            </p>
+          </header>
+
+          <section class="profile-card__time-section" aria-labelledby="time-heading">
+            <h2 id="time-heading" class="section-title">Current Time</h2>
+            <p
+              class="profile-card__time"
+              data-testid="test-user-time"
+              aria-live="polite"
+            >
+              0
+            </p>
+          </section>
+
+          <nav
+            class="profile-card__socials"
+            aria-labelledby="social-heading"
+            data-testid="test-user-social-links"
+          >
+            <h2 id="social-heading" class="section-title">Social Links</h2>
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://github.com/lordrock"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                >
+                  X / Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="profile-card__lists">
+            <section aria-labelledby="hobbies-heading">
+              <h2 id="hobbies-heading" class="section-title">Hobbies</h2>
+              <ul class="pill-list" data-testid="test-user-hobbies">
+                <li>Designing visual content</li>
+                <li>Frontend coding</li>
+                <li>Learning new tech skills</li>
+                <li>Exploring Web3 ideas</li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="dislikes-heading">
+              <h2 id="dislikes-heading" class="section-title">Dislikes</h2>
+              <ul class="pill-list pill-list--muted" data-testid="test-user-dislikes">
+                <li>Poor user experience</li>
+                <li>Cluttered layouts</li>
+                <li>Missed deadlines</li>
+                <li>Unclear communication</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
