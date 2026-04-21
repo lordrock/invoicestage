@@ -4,11 +4,11 @@ A responsive invoice management application built with React and LocalStorage pe
 
 ## Live Demo
 
-Add your deployed link here
+https://invoicestage.vercel.app/
 
 ## GitHub Repository
 
-https://github.com/lordrock/invoicestage
+https://github.com/lordrock/invoicestage/tree/main/Desktop/frontstage-2/invoice-app
 
 ## Features
 
